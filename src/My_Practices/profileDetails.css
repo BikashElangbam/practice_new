@@ -1,0 +1,8 @@
+.profileDetails{
+    text-align: center;
+    padding: 20px;
+    border: 1px solid chocolate;
+}
+.image{
+    border-radius: 50%;
+}
