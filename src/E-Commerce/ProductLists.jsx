@@ -33,7 +33,7 @@ const ProductLists = () =>{
                 product.map((element, i)=>{
                     const {id,image,itemName,description,price} = element
                     return(
-                        <div className="productDetails" key = {id}>
+                        <div key = {id}>
                             <ProductDetails key = {id} image ={image} name = {itemName} description ={description} price = {price}/>
                         </div>
                     )
