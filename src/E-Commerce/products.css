@@ -1,0 +1,23 @@
+/* .product-container{
+    display: flex;
+    border: 1px rgb(243, 27, 27);
+} */
+.productDetails{
+    display: flex;
+    column-gap: 20px;
+    padding-bottom: 10px;
+    text-align: justify;
+
+}
+/* @media screen and (min-width: 600px) {
+    .login-form-container {
+      padding: 5rem;
+      border: 1px solid white;
+      border-radius: 10px;
+      margin: 0.5rem;
+    }} */
+.productImage{
+    width: 150px;
+    height: 150px;
+}
+

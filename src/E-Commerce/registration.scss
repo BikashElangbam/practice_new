@@ -1,0 +1,87 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.container{
+    display: flex;
+    margin: 60px;
+    border-radius: 30px;
+    .left{
+        background-color:  rgb(1, 171, 197);
+        h3{
+            margin: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: gold;
+        }
+        .welcome{
+            width: 20vw;
+            height: 20vw;
+            padding: 50px;
+            text-align: center;
+            h1{
+            font-size: 4rem;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(245, 244, 244);
+            }
+            p{
+                font-size: 1.5rem;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: rgb(255, 253, 253);
+            }
+        }
+        button{
+            display: flex;
+            padding: 10px 20px 10px 20px;
+            margin: 30px 80px;
+            align-items: center;
+            justify-content: center;
+            font-weight:bold;
+            color: white;
+            background: transparent;
+            border: 1px solid aliceblue;
+            border-radius: 20px;
+        }
+    }
+    .right{
+        width: 60vw;
+        background-color: rgb(230, 230, 230);
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:flex-start;
+        h1{
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(12, 12, 12);
+        }
+        p{
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(12, 12, 12);
+        }
+        .form *{
+            width: 20vw;
+            padding: 10px;
+            display: flex;
+            // flex-direction: column;
+        }
+        button{
+            display: flex;
+            padding: 10px 20px 10px 20px;
+            margin: 30px 80px;
+            align-items: center;
+            justify-content: center;
+            font-weight:bold;
+            color: white;
+            background-color: rgb(1, 171, 197);
+            border-radius: 20px;
+            border: none;
+        }
+        .error{
+            color: crimson;
+        }
+
+    }
+}

@@ -1,0 +1,31 @@
+[
+   
+    {
+        "id": 1,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Red_Apple.jpg/265px-Red_Apple.jpg",
+        "itemName": "Apple",
+        "description": "1 bag ~2lb",
+        "price": 6.99
+    },
+    {
+        "id": 2,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Bananas_white_background_DS.jpg/320px-Bananas_white_background_DS.jpg",
+        "itemName": "Banana",
+        "description": "1 box ~",
+        "price": 4.55
+    },
+    {
+        "id": 3,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Table_grapes_on_white.jpg/320px-Table_grapes_on_white.jpg",
+        "itemName": "Grapes",
+        "description": "1 ct, 3-5lb",
+        "price": 25.99
+    },
+    {
+        "id": 4,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Pineapple_and_cross_section.jpg/286px-Pineapple_and_cross_section.jpg",
+        "itemName": "'Pineapple",
+        "description": "1 bag 3lb",
+        "price": 9.99
+    }
+]

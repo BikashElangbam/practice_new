@@ -1,0 +1,124 @@
+body {
+    padding: 50px;
+    background-color: #66CCFF;
+    font-family: sans-serif;
+  }
+  
+  .todoApp{
+    background-color: white;
+    justify-content: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    width:300px;
+    font-weight: bold;
+    position: relative;
+  }
+  .container {
+    position: relative;
+    display: flex;
+    justify-content: left;
+    padding: 10px;
+    column-gap: 5px;  
+  }
+  
+  .textInput{
+    padding: 10px;
+    font-family:sans-serif;
+    position: relative;
+    width: 250px;
+  }
+  .btnAdd{
+    font-weight: bold;
+    background-color: blueviolet;
+    padding: auto;
+    border: none;
+    border-radius: 5px;
+    color:white;
+    width: 48px;
+    margin-right:10px;
+    
+  }
+  .btnDelete{
+    font-weight: bold;
+    background-color: rgb(236, 65, 65);
+    padding: 5px;
+    color:white;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+    float:right;
+    margin-left: 5px;
+  }
+  .btnClearAll{
+    font-weight: bold;
+    background-color: blueviolet;
+    padding: auto;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    height: 35px;
+    margin-left:30px;
+    
+  }
+  .todoList{
+    color: black;
+    display:list-item;
+    column-gap: 10px;
+    background-color: rgba(134, 130, 130, 0.5);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    list-style: none;
+    width:250px;
+  }
+  .todoList:hover .btnDelete{
+    display: block;
+  }
+  .footer{
+    display: inline-flex;
+    justify-content: center;
+    column-gap: 10px;
+    padding: 5px;
+    
+    
+  }
+  
+  .itemList{
+    position:relative;
+    text-align: left;
+    padding: 0;
+    list-style: none;
+    display: inline-flex;
+    
+    flex-direction: column-reverse;
+  }
+  input[type="text"]{
+    background: transparent;
+    color:rgb(3, 3, 3);
+    text-align: left;
+    border-radius: 5px;
+    border-color: darkgray;
+  }
+  h4{
+    font-size: 14px;
+  }
+  
+  .keys{
+    display: flex;
+    column-gap: 20px;
+    height: 200px;
+    width: 600px;
+    background-color:darkgrey;
+    justify-content:center;
+    padding: 50px;
+    }
+  
+    h3{
+      background-color: aliceblue;
+      width: 120px;
+      height: 30px;
+      padding: 10px;
+      text-align: center;
+    }
