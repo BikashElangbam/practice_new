@@ -1,12 +1,11 @@
-
-.productDetails{
+.product{
     display: flex;
-    
+    flex-direction: row;
+}
+.product-container{
+    display: flex;
+   
 
 }
 
-.productImage{
-    width: 150px;
-    height: 150px;
-} 
 

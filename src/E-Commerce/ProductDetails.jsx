@@ -5,12 +5,12 @@ const ProductDetails = (props)=>{
 
         return(
             
-                <div key = {props.id}>
-                    <div className="productDetails">
-                        <div>
-                            <img className="productImage" src = {props.image} height="150px"/>
+                <div className="product" key = {props.id}>
+                    <div className="product-container">
+                        <div className="product-Image">
+                            <img  src = {props.image}/>
                         </div>
-                        <div>
+                        <div className="product-details">
                             <h3>{props.name}</h3>
                             <h4>{props.description}</h4>
                             <p>${props.price}</p>
