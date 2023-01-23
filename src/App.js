@@ -8,7 +8,7 @@ import Layout from './E-Commerce/Layout';
 import Home from './E-Commerce/Home';
 import About from './E-Commerce/About';
 import Cart from './E-Commerce/Cart';
-import ProfileList from './My_Practices/ProfileList';
+// import ProfileList from './My_Practices/ProfileList';
 function App() {
   return (
     <>
