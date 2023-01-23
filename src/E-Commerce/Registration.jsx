@@ -68,7 +68,7 @@ const Registration = () => {
                                     value={values.username}
                                     onChange={handleChange}
                                     autoComplete="off"
-                                    placeholder="Name"
+                                    placeholder="Username"
                                 />
                             </div>
                             <div>
@@ -83,7 +83,7 @@ const Registration = () => {
                                     value={values.email}
                                     onChange={handleChange}
                                     autoComplete="off"
-                                    placeholder="Name"
+                                    placeholder="E-mail"
                                 />
                             </div>
                             <div>
@@ -98,7 +98,7 @@ const Registration = () => {
                                     value={values.password}
                                     onChange={handleChange}
                                     autoComplete="off"
-                                    placeholder="Name"
+                                    placeholder="Password"
                                 />
                             </div>
                             <div>
@@ -113,7 +113,7 @@ const Registration = () => {
                                     value={values.rePassword}
                                     onChange={handleChange}
                                     autoComplete="off"
-                                    placeholder="Name"
+                                    placeholder="Confirm Password"
                                 />
                             </div>
                             <div>
