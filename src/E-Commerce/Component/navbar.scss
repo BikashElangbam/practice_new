@@ -1,0 +1,28 @@
+body{
+	margin: 0;
+  }
+.navigation-container{
+	background-color: rgb(216, 192, 228);
+	font-weight: bold;
+	color: rgb(2, 2, 2);
+	height:30px;
+	width: 100%;
+	padding: 20px;
+	.navbar{
+		display: flex;
+		list-style: none;
+		gap: 50px;
+		
+		
+	}
+	button{
+		font-weight: bold;
+        background-color: rgb(79, 93, 224);
+        font-size: 13px;
+        border-color:white;
+        color:antiquewhite;
+        padding: 5px 12px;
+        cursor: pointer;
+	}
+
+}
