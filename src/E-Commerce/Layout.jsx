@@ -1,5 +1,5 @@
 import { Link, Outlet } from 'react-router-dom';
-import './navbar.css'
+import "./navbar.scss";
 const Layout = () => {
   return (
     <div>
@@ -29,7 +29,6 @@ const Layout = () => {
             <Link to='/cart'>Cart</Link>
           </li>
         </ul>
-
       </div>
       <Outlet />
       {/* <footer>Footer</footer> */}

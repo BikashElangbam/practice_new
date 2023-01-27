@@ -44,9 +44,9 @@
         }
     }
     .right{
-        width: 60vw;
+        width: 50vw;
         background-color: rgb(230, 230, 230);
-        padding: 50px;
+        padding: 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -80,7 +80,11 @@
             border: none;
         }
         .error{
+            margin: 0px;
+            padding: 10px 0px;
             color: crimson;
+            font-size: small;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
         }
 
     }

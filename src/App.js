@@ -1,16 +1,14 @@
 import React from 'react';
 import './App.css';
-import { Routes, Route } from "react-router-dom";
-import Login from './E-Commerce/Component/Login';
-import ProductLists from './E-Commerce/Component/ProductLists';
-import Registration from './E-Commerce/Component/Registration';
-import Layout from './E-Commerce/Component/Layout';
-import Home from './E-Commerce/Component/Home';
-import About from './E-Commerce/Component/About';
-import Cart from './E-Commerce/Component/Cart'
-
-// import ProfileList from './My_Practices/ProfileList';
-// import TodoAppHooks from './My_Practices/TodoAppHooks';
+import { Routes,Route } from 'react-router-dom';
+import Login from './E-Commerce/Login';
+import ProductLists from './E-Commerce/ProductLists';
+import Registration from './E-Commerce/Registration';
+import Layout from './E-Commerce/Layout';
+import Home from './E-Commerce/Home';
+import About from './E-Commerce/About';
+import Cart from './E-Commerce/Cart';
+import ProfileList from './My_Practices/ProfileList';
 function App() {
   return (
     <>
