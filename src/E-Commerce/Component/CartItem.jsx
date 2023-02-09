@@ -16,7 +16,7 @@ const CartItem = ({ item }) => {
              <p>${item.price}</p>
           </div>
         </div>
-          <button onClick={()=> removeItem(item.id)}>Remove from Cart</button>
+          <button onClick={()=> removeItem(item._id)}>Remove from Cart</button>
         </div>
   );
 };

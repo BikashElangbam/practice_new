@@ -3,7 +3,7 @@ import { useContext } from 'react';
 import CartContext from '../Context/CartContext';
 import './navbar.scss'
 
-const Layout = ({}) => {
+const Layout = () => {
 
   const { cartItems, removeAllCart} = useContext(CartContext);
   return (
@@ -13,12 +13,21 @@ const Layout = ({}) => {
           <li>
           <Link to='/'>Home</Link>
           </li>
-          <li>
+          {/* <li>
             <Link to='/productlist'>ProductLists</Link>
-          </li>
+          </li> */}
           <li>
-          <Link to='/about'>About</Link>
+            <Link to='/addProduct'>AddProduct</Link>
           </li>
+          {/* <li>
+            <Link to='/update/:id'>UpdateProduct</Link>
+          </li> */}
+          <li>
+            <Link to='/products'>Products</Link>
+          </li>
+          {/* <li>
+          <Link to='/about'>About</Link>
+          </li> */}
           <li>
             <Link to='/login'>Login</Link>
           </li>

@@ -1,10 +1,13 @@
-import React, {useState} from "react";
+
 const Validation = (values) =>{
     let errors ={}
-    const emailRegx = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9]+).([a-z]+)(.[a-z]+)?$/;
+    const emailRegx = /^([a-zA-Z0-9._]+)@([a-zA-Z0-9]+).([a-z]+)(.[a-z]+)?$/;
+    const nameRegx = /^[a-zA-Z]{2,30}$/;
 
     if(!values.username){
-        errors.username = "Name is required"
+        errors.username = "Email is required"
+    }else if(!nameRegx.test(values.username)){
+        errors.username = "Name is Invalid"
     }
 
     if(!values.email){
@@ -21,7 +24,7 @@ const Validation = (values) =>{
 
     if(!values.rePassword){
         errors.rePassword = "Confirm Password is required"
-    } else if (values.password != values.rePassword){
+    } else if (values.password !== values.rePassword){
         errors.rePassword = "Password does not matched"
     }
 

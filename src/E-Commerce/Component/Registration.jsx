@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import './registration.scss';
 import Validation from "./Validation";
 import Login from "./Login";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const Registration = () => {
     const [values, setValues] = useState({
@@ -13,34 +14,31 @@ const Registration = () => {
 
     })
 
-    const [errors, setErros] = useState({})
+    const navigate = useNavigate();
+    const [errors, setErrors] = useState({})
     const [validData, setValidData] = useState(false)
-    // const [allRecord, setAllRecord] = useState([])
 
     const handleChange = (e) => {
         const { name, value } = e.target;
-        console.log(name, value)
         setValues({ ...values, [name]: value })
 
     }
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        setErros(Validation(values));
         setValidData(true);
-        setValues({ username: "", email: "", password: "", rePassword: "" });
-
-        // const newvalues = {...values, id : new Date().getTime.toString()}
-        // setAllRecord([...allRecord, newvalues])
-    }
-
-    useEffect(() => {
-        if (Object.keys(errors).length === 0 && validData) {
-            alert("Account Created!!")
-
+        setErrors(Validation(values));
+        try {
+            if (Object.keys(errors).length === 0 && validData) {
+                const result = await axios.post("http://localhost:3001/register", values);
+                setValues({ username: "", email: "", password: "", rePassword: "" });
+                alert("Account Created!")
+                navigate('/')
+            }
+        } catch (error) {
+            return (error.message)
         }
-    }, [errors])
-
+    }
     return (
         <>
             <div className="container">
@@ -68,7 +66,7 @@ const Registration = () => {
                                     value={values.username}
                                     onChange={handleChange}
                                     autoComplete="off"
-                                    placeholder="Name"
+                                    placeholder="Username"
                                 />
                             </div>
                             <div>
@@ -83,7 +81,7 @@ const Registration = () => {
                                     value={values.email}
                                     onChange={handleChange}
                                     autoComplete="off"
-                                    placeholder="Email"
+                                    placeholder="E-mail"
                                 />
                             </div>
                             <div>
@@ -93,7 +91,7 @@ const Registration = () => {
                         <div className="input1">
                             <div>
                                 <input
-                                    type="text"
+                                    type="password"
                                     name="password"
                                     value={values.password}
                                     onChange={handleChange}
@@ -108,7 +106,7 @@ const Registration = () => {
                         <div className="input1">
                             <div>
                                 <input
-                                    type="text"
+                                    type="password"
                                     name="rePassword"
                                     value={values.rePassword}
                                     onChange={handleChange}

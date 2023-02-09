@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import './login.scss';
-import Validation from "./Validation";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const Login = () =>{
 
@@ -9,7 +9,7 @@ const Login = () =>{
         email : "",
         password : ""
     })
-    const [errors, setErros]=useState({})
+   const navigate = useNavigate();
 
     const handleChange = (e) =>{
         const {name, value} = e.target;
@@ -17,9 +17,15 @@ const Login = () =>{
     
     }
     
-    const handleSubmit = (e) =>{
+    const handleSubmit = async(e) =>{
         e.preventDefault();
-        setErros(Validation(values))
+
+        try{
+          const result = await axios.post("http://localhost:3001/login", values)
+          navigate('/')
+        }catch(error){
+            alert("Invalid Credentials") 
+        }
         setValues({email : "", password : ""});
     }
     
@@ -39,9 +45,6 @@ const Login = () =>{
                 autoComplete="off"
               />
             </div>
-            <div className="login-error">
-              {errors.email && <p> {errors.email}</p>}
-            </div>
           </div>
           <div className="input">
             <div>
@@ -54,12 +57,10 @@ const Login = () =>{
                 autoComplete="off"
               />
             </div>
-            <div className="login-error">
-              {errors.password && <p> {errors.password}</p>}
-            </div>
           </div>
           <div className="btn">
             <button type="submit"> Login</button>
+            <Link to='/changePassword'> Forgot Password</Link>
           </div>
           <div className="register-link">
             <h4>Do not have an account ?</h4>

@@ -1,0 +1,24 @@
+.Product-Container{
+    background-color: rgba(131, 159, 201, 0.582);
+    width: 500px;
+    margin: 5% 30%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: block;
+    
+    
+    input{
+        // padding-bottom: 20px;
+        width : 40%;
+        justify-content: center;
+        
+      }
+    button{
+        padding: 10px;
+        border: none;
+        border-radius: 10%;
+        background-color: rgb(67, 185, 57);
+        color: white;
+    }
+}

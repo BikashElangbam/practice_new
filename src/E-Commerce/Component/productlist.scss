@@ -1,0 +1,20 @@
+.prod-container{
+    background-color: rgba(131, 159, 201, 0.582);
+    width: 90%;
+    text-align: center;
+    margin-left: 80px;
+}    
+.prod-container ul li{
+        display: inline-block;
+        width: 200px;
+        border:1px solid rgb(38, 53, 102);
+        padding : 5px
+
+}
+button{
+    padding: 10px;
+    border-style: none;
+    // border-radius: 10%;
+    background-color: rgb(65, 179, 99);
+    color: white;
+}
